@@ -63,8 +63,8 @@ The loop inside it is the inner loop
 
 In QuadA:
 
-outer loop handles → rows
-inner loop handles → columns
+* outer loop handles → rows
+* inner loop handles → columns
 
 ### What is the Difference Between Quad C, D & E
 
