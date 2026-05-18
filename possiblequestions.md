@@ -48,11 +48,16 @@ Note: When a loop is inside another loop, it is called a:
 
 Example:
 
+```go
+
 for i := 1; i <= 3; i++ {      // outer loop
 	for j := 1; j <= 5; j++ {  // inner loop
 
 	}
 }
+
+```
+
 The first loop is the outer loop
 The loop inside it is the inner loop
 
