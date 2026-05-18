@@ -227,3 +227,109 @@ z01.PrintRune('A')
 
 which prints one character (rune) at a time.
 
+### What is the Difference between `=` and `==`
+
+# `=`
+
+Assignment operator.
+
+Used to give/change a value.
+
+Example:
+
+```go id="ry0g8v"
+x = 5
+```
+
+means:
+
+> put 5 into `x`
+
+---
+
+# `==`
+
+Comparison operator.
+
+Used to check if two values are equal.
+
+Example:
+
+```go id="v1h4e6"
+x == 5
+```
+
+means:
+
+> is `x` equal to 5?
+
+It returns:
+
+* `true`
+* or `false`
+
+---
+
+# `:=`
+
+Short variable declaration.
+
+Used to create and assign a variable at the same time.
+
+Example:
+
+```go id="jxukw4"
+x := 5
+```
+
+means:
+
+> create `x` and store 5 in it
+
+---
+
+Simple summary:
+
+| Symbol | Meaning                  |
+| ------ | ------------------------ |
+| `=`    | assign/change value      |
+| `==`   | compare values           |
+| `:=`   | create + assign variable |
+
+
+### What is i++
+
+it means `i = i + 1` it is used to add a value to the `for` loop
+
+### Why use `x <= 0 || y <= 0` and `return`
+
+We use:
+```go
+
+x <= 0 || y <= 0
+```
+
+to check for invalid rectangle sizes.
+A rectangle cannot have:
+
+* zero width
+* zero height
+* negative size
+
+So if either value is invalid, the function stops:
+
+return
+
+Example:
+```go
+
+QuadA(0, 5)
+```
+
+or
+```go
+QuadA(-3, 2)
+```
+
+should print nothing because those sizes do not make sense for drawing a rectangle.
+
