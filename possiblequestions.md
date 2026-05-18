@@ -129,7 +129,7 @@ which will determine the order of what will be printed
 * x: The Number of columns to be printed
 * y: The number of rows to be printed
 
-### What is `&&` and `\\`
+### What is `&&` and `||`
 
 * && : This represents `and` command - it requires both statement to be correct,
 * || : This represents the `or` command - it requires at least one statement to be correct as the name implies - the way the english word OR is used
