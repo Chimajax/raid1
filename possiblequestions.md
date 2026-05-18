@@ -138,15 +138,19 @@ which will determine the order of what will be printed
 
  example:
  ```go
-if (i == 1 || i == 5)
+if (x <= 0 || y <= 0) {
+return
+}
 ```
-this means if i is 1 OR 5
- example:
+this means if x is 0 OR y is 0, return nothing
+
  
  ```go
-if (i == 1 && i == 5)
+if (x <= 0 && y <= 0) {
+return
+}
 ```
-this means if i is 1 AND 5
+this means if x is 0 AND y is 0, return nothing
 
 
 ### What is package `piscine`
@@ -173,4 +177,51 @@ QuadB()
 ```
 
 can all belong to the same package and work together.
+
+### What is go.mod
+
+`go.mod` is the main file that manages a Go project.
+
+It tells Go:
+
+the project name
+* which Go version is used
+* which external packages the project needs
+
+Example:
+```mod
+module myproject
+
+go 1.22
+```
+
+### What is go.sum
+go.sum
+
+go.sum stores security/check information for downloaded packages.
+
+It helps Go verify:
+
+> “Did this package change or get corrupted?”
+
+Go creates it automatically.
+
+### What is the import z01 link?
+
+`"github.com/01-edu/z01"`
+
+This is an external Go package/library.
+
+> import "github.com/01-edu/z01"
+
+It comes from GitHub and provides useful functions.
+
+In your project, it is mainly used for:
+
+```go
+
+z01.PrintRune('A')
+```
+
+which prints one character (rune) at a time.
 
