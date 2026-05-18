@@ -122,12 +122,12 @@ In short:
 The looping structure is almost identical in all of them.
 
 
-### What is x and y in Quad(y, x)
+### What is x and y in Quad(x, y)
 x and y are `integers` that represent the number of rows and column the input will take,
 which will determine the order of what will be printed
 
-* x: The Number of rows to be printed
-* y: The number of columns to be printed
+* x: The Number of columns to be printed
+* y: The number of rows to be printed
 
 ### What is `&&` and `\\`
 
@@ -139,7 +139,7 @@ which will determine the order of what will be printed
  example:
  ```go
 if (x <= 0 || y <= 0) {
-return
+	return
 }
 ```
 this means if x is 0 OR y is 0, return nothing
@@ -147,10 +147,12 @@ this means if x is 0 OR y is 0, return nothing
  
  ```go
 if (x <= 0 && y <= 0) {
-return
+	return
 }
 ```
 this means if x is 0 AND y is 0, return nothing
+
+> an empty "return" means return nothing
 
 
 ### What is package `piscine`
