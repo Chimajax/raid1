@@ -122,10 +122,55 @@ In short:
 The looping structure is almost identical in all of them.
 
 
-### What is x and y in Quad(x, y)
-x and y are integers that represent the number of rows and column the input will take,
+### What is x and y in Quad(y, x)
+x and y are `integers` that represent the number of rows and column the input will take,
 which will determine the order of what will be printed
 
 * x: The Number of rows to be printed
 * y: The number of columns to be printed
+
+### What is `&&` and `\\`
+
+* && : This represents `and` command - it requires both statement to be correct,
+* || : This represents the `or` command - it requires at least one statement to be correct as the name implies - the way the english word OR is used
+
+ THEY can be used when passing the functions 
+
+ example:
+ ```go
+if (i == 1 || i == 5)
+```
+this means if i is 1 OR 5
+ example:
+ 
+ ```go
+if (i == 1 && i == 5)
+```
+this means if i is 1 AND 5
+
+
+### What is package `piscine`
+
+`package piscine` means the file belongs to a group of Go code called `piscine`.
+
+A package helps organize related functions and files together.
+
+Example:
+
+```go id="9r6v9y"
+package piscine
+```
+
+tells Go:
+
+> “This file is part of the `piscine` package.”
+
+So functions like:
+
+```go id="wjaxph"
+QuadA()
+QuadB()
+```
+
+can all belong to the same package and work together.
 
