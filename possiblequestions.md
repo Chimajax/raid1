@@ -90,9 +90,9 @@ Uses:
 Example:
 
 ```text id="b6f9tw"
-ABBBC
+ABBBA
 B   B
-ABBBC
+CBBBC
 ```
 
 ---
@@ -106,7 +106,7 @@ Example:
 ```text id="5qdu4r"
 ABBBC
 B   B
-CBBBA
+ABBBC
 ```
 
 Top corners and bottom corners are reversed compared to QuadC.
