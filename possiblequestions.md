@@ -41,6 +41,26 @@ In your `Quad` functions, loops are used because the program must repeat work:
 * row by row
 * column by column
 
+### what happends when we use 2 `for` loops
+Note: When a loop is inside another loop, it is called a:
+
+`nested loop`
+
+Example:
+
+for i := 1; i <= 3; i++ {      // outer loop
+	for j := 1; j <= 5; j++ {  // inner loop
+
+	}
+}
+The first loop is the outer loop
+The loop inside it is the inner loop
+
+In QuadA:
+
+outer loop handles → rows
+inner loop handles → columns
+
 ### What is the Difference Between Quad C, D & E
 
 The main difference between `QuadC`, `QuadD`, and `QuadE` is the **characters used for the corners and borders**.
@@ -332,4 +352,5 @@ QuadA(-3, 2)
 ```
 
 should print nothing because those sizes do not make sense for drawing a rectangle.
+
 
